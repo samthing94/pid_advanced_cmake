@@ -1,0 +1,15 @@
+services:
+  cmake-dev:
+    build:
+      context: .
+      args:
+        USER_UID: 1000
+        USER_GID: 1000
+        USERNAME: vscode
+    container_name: pid_cmake_dev
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    stdin_open: true
+    tty: true
+    command: tail -f /dev/null
