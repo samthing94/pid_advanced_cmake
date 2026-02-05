@@ -33,11 +33,11 @@ Makefile
 *.dwarf
 
 # IDE
-.vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# .vscode/
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
 .idea/
 *.swp
 *.swo
@@ -45,8 +45,7 @@ Makefile
 .DS_Store
 
 # Dev Container
-.devcontainer/
-!.devcontainer/devcontainer.json
+# .devcontainer/
 
 # Docker
 docker-compose.override.yml

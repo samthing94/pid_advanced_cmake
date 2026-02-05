@@ -1,0 +1,10 @@
+{
+  "cmake.configureOnOpen": false,
+
+  
+    // ez jobb oldali gombot ad hozzá: https://marketplace.visualstudio.com/items?itemName=IntegerITSM.vscode-command-button
+    "commandButton.text": "Open Devcontainer",
+    "commandButton.emoji": "🐳",
+    "commandButton.color": "#81C784",
+    "commandButton.command": "remote-containers.reopenInContainer"
+}

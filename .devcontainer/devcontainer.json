@@ -1,0 +1,113 @@
+// {
+//   "name": "pid-cmake-dev",
+//   "dockerComposeFile": [
+//     "../docker-compose.yml"
+//   ],
+//   "service": "cmake-dev",
+//   "workspaceFolder": "/workspace",
+
+//   "remoteUser": "vscode",
+
+//   "customizations": {
+//     "vscode": {
+//       "extensions": [
+//         "ms-vscode.cmake-tools",
+//         "ms-vscode.cpptools",
+//         "ms-vscode.cpptools-extension-pack",
+//         "seunlanlege.action-buttons"
+//       ],
+//       "settings": {
+//         "cmake.useCMakePresets": "always",
+//         "cmake.configureOnOpen": true,
+//         "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+//         "cmake.generator": "Ninja"
+//       }
+//     }
+//   },
+
+//   "postCreateCommand": "cmake --version && ninja --version && arm-none-eabi-gcc --version"
+// }
+
+{
+  "name": "pid-cmake-dev",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "cmake-dev",
+  "workspaceFolder": "/workspace",
+
+  "remoteUser": "vscode",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "seunlanlege.action-buttons"
+      ],
+      "settings": {
+        "cmake.useCMakePresets": "always",
+        "cmake.configureOnOpen": true,
+        "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+        "cmake.generator": "Ninja",
+
+        "actionButtons": {
+          "defaultColor": "#FFFFFF",
+          "reloadButton": "♻️",
+          "loadNpmCommands": false,
+
+          "commands": [
+            {
+              "name": "🚀 Build All (Debug)",
+              "color": "#81C784",
+              "command": "cmake --preset Debug && cmake --build --preset Debug",
+              "singleInstance": true,
+              "focus": true
+            },
+            {
+              "name": "🚀 Build All (Release)",
+              "color": "#64B5F6",
+              "command": "cmake --preset Release && cmake --build --preset Release",
+              "singleInstance": true,
+              "focus": true
+            },
+            {
+              "name": "🧹 Clean (Debug)",
+              "color": "#E57373",
+              "command": "cmake --build --preset Debug --target clean",
+              "singleInstance": true,
+              "focus": true
+            },
+            {
+              "name": "🧹 Clean (Release)",
+              "color": "#FFB74D",
+              "command": "cmake --build --preset Release --target clean",
+              "singleInstance": true,
+              "focus": true
+            },
+            // {
+            //   "name": "🖥️ Open Local",
+            //   "color": "#FFD54F",
+            //   "useVsCodeApi": true,
+            //   "command": "remote-containers.reopenFolderLocally",
+            //   "singleInstance": true
+            // }
+
+            // {
+            //   "name": "🖥️ Open Local",
+            //   "color": "#FFD54F",
+            //   "useVsCodeApi": true,
+            //   "command": "vscode.commands.executeCommand",
+            //   "args": ["remote-containers.reopenFolderLocally"],
+            //   "singleInstance": true
+            // }
+
+          ]
+        }
+      }
+    }
+  },
+
+  "postCreateCommand": "cmake --version && ninja --version && arm-none-eabi-gcc --version"
+}

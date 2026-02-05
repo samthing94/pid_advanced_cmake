@@ -1,0 +1,90 @@
+{
+  "recommendations": [
+    "n3rds-inc.pomodoro-timer-focus",
+    "akashno.calculator-on-command-palet",
+    "giovannimolina.minimalist-calculator",
+    "streetsidesoftware.code-spell-checker",
+    "adpyke.codesnap",
+    "solomonkinard.git-blame",
+    "eamodio.gitlens",
+    "donjayamanne.githistory",
+    "repreng.csv",
+    "ms-vscode-remote.remote-containers",
+    "ms-azuretools.vscode-docker",
+    "aaron-bond.better-comments",
+    "gruntfuggly.todo-tree",
+    "wayou.vscode-todo-highlight",
+    "alefragnani.bookmarks",
+    "alefragnani.project-manager",
+    "aslamanver.vsc-export",
+    "editorconfig.editorconfig",
+    "shinotatwu-ds.file-tree-generator",
+    "ms-vsliveshare.vsliveshare",
+    "oderwat.indent-rainbow",
+    "yzhang.markdown-all-in-one",
+    "rangav.vscode-thunder-client",
+    "stuart.unique-window-colors",
+    "usernamehw.errorlens",
+    "mintlify.document",
+    "ms-vscode-remote.remote-ssh",
+    "syncfusioninc.document-viewer-vscode-extensions",
+    "jacqueslucke.gcov-viewer",
+    // "wequick.coverage-gutters",
+    "devonray.snippet",
+    "pkief.material-icon-theme",
+    "redhat.vscode-yaml",
+    // innen python-osok: https://medium.com/@lydia_73555/useful-vscode-extensions-ive-found-so-far-25147210e5ff
+    "cs128.cs128-clang-tidy",
+    "xaver.clang-format",
+    "shardulm94.trailing-spaces",
+    "ms-vscode.makefile-tools",
+
+    "trond-snekvik.gnu-mapfiles",
+    "ms-vscode.cmake-tools",
+    "mine.cpplint",
+    "ms-vscode.cpptools",
+    "jeff-hykin.better-cpp-syntax",
+    "dan-c-underwood.arm",
+    "marus25.cortex-debug",
+    "mcu-debug.peripheral-viewer",
+    "mcu-debug.rtos-views",
+    "ms-vscode.vscode-serial-monitor",
+    "demcon.uscope",
+    // "arm.keil-studio-pack",    // ebben több minden van
+    "cschlosser.doxdocgen",
+    "matepek.vscode-catch2-test-adapter",
+    "zixuanwang.linkerscript",
+    // "amapleaf.linker-script",
+    "codechecker.vscode-codechecker",
+    "helly25.helly25iwyu",
+    "mcu-debug.memory-view",
+    "numaru.vscode-ceedling-test-adapter",
+
+
+  // EZEK MÁR NEM TELEPÍTHETŐK VALAMIÉRT:
+    // "ms-vscode.vscode-embedded-tools",
+    // "abiospampinato.vscode-commands"
+
+    // felső gombok, de ehhez ikonokat kell betenni mappába
+    "jerrygoyal.shortcut-menu-bar",
+    "ban.spellright",
+    "nabeelvalley.easyzoom",
+    "ibm.output-colorizer",
+
+    "adam-bender.commit-message-editor",
+
+    "jaycetyle.vscode-gnu-global",
+    "miki0w0.c-hierarchy",
+
+    "briannicholls.split-terminal",
+
+
+    // tmux, split terminal ??
+
+    "visualzoran.vz-file-templates",
+    "kogetsuki.auto-file-templates",
+
+    "liangruliu.customize-toolbar",
+    
+  ]
+}

@@ -1,0 +1,12 @@
+// ez nem működik innen!!!
+// csak itt hagytam a filet, de amúgy itt van:
+
+// ~/.config/Code/User/:
+
+// // Place your key bindings in this file to override the defaults
+// [
+//     {
+//         "key": "ctrl+alt+l",
+//         "command": "remote-containers.reopenLocally"
+//     }
+// ]
